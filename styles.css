@@ -1,0 +1,127 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    text-align: center;
+  }
+  .header {
+    background-color: #ffca28;
+    padding: 20px;
+  }
+  .header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0;
+  }
+  .header select {
+    padding: 5px;
+    font-size: 1em;
+  }
+  .nav {
+    background-color: #0288d1;
+    padding: 10px;
+  }
+  .nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  .hero {
+    padding: 50px;
+    background-color: #fff;
+  }
+  .hero .logo {
+    width: 200px;
+    animation: bounce 2s infinite;
+  }
+  .hero h2 {
+    color: #0288d1;
+    font-size: 1.8em;
+  }
+  .hero p {
+    font-size: 1.2em;
+  }
+  .btn {
+    background: #ffca28;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+    display: inline-block;
+  }
+  .content {
+    padding: 50px;
+    background-color: #fff;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  
+  .header {
+    position: relative;
+  }
+  
+  .language-selector {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .language-icon {
+    position: absolute;
+    left: 8px;
+    pointer-events: none;
+    color: #666;
+  }
+  
+  #language {
+    padding: 8px 8px 8px 36px;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 44px;
+  }
+  
+  #language option {
+    display: none;
+  }
+  
+  #language:focus option {
+    display: block;
+  }
+  
+  /* 自定义选择器显示文本 */
+  #language option[value="zh"]::before { content: "语言"; }
+  #language option[value="en"]::before { content: "Lang"; }
+  #language option[value="ja"]::before { content: "言語"; }
+  #language option[value="ko"]::before { content: "언어"; }
+  #language option[value="fr"]::before { content: "Langue"; }
+
+
+  .social-links {
+    display: flex;
+    gap: 24px;
+    justify-content: start;
+    margin-top: 20px;
+  }
+  
+  .social-link {
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #000;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
